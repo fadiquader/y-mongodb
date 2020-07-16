@@ -1,0 +1,53 @@
+{
+  "name": "y-mongodb",
+  "version": "0.1.0",
+  "description": "Mongodb adapter for Yjs",
+  "main": "./dist/y-mongodb.cjs",
+  "module": "./src/y-mongodb.js",
+  "types": "./dist/src/y-mongodb.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "test": "rollup -c && nyc --check-coverage --lines 100 --branches 100 --functions 100 --statements 100 node ./dist/test.cjs",
+    "clean": "rm -rf dist",
+    "lint": "standard --fix && tsc",
+    "dist": "rollup -c",
+    "preversion": "npm run lint && npm run test && npm run clean && npm run dist && tsc && test -e dist/src/y-mongodb.d.ts && test -e dist/y-mongodb.cjs"
+  },
+  "author": "Fadi Quader <fadi.quader@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lib0": "^0.2.32",
+    "mongoist": "^2.5.2",
+    "mongojs": "^3.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.21.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "standard": "^14.3.4",
+    "typescript": "^3.9.6",
+    "yjs": "^13.3.0"
+  },
+  "peerDependencies": {
+    "yjs": "^13.0.0"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "standard": {
+    "ignore": [
+      "/dist",
+      "/node_modules",
+      "/docs"
+    ]
+  },
+  "keywords": [
+    "Yjs",
+    "Y-mongodb",
+    "shared editing",
+    "collaboration"
+  ]
+}
