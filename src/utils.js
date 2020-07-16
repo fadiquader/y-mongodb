@@ -81,7 +81,7 @@ export const getMongoBulkData = (db, query, opts) => db.readAsCursor(query, opts
  * @param {any} db
  * @return {Promise<any>}
  */
-export const flushDB = db => db.flush();
+export const flushDB = db => db.flush()
 
 /**
  * Get all document updates for a specific document.

@@ -36,11 +36,13 @@ export class MongoAdapter {
     if (opts.limit) curs = curs.limit(opts.limit)
     return curs.toArray()
   }
+
   close () {
-    this.db.close();
+    this.db.close()
   }
+
   async flush () {
-    await this.db.dropDatabase();
-    await this.db.close();
+    await this.db.dropDatabase()
+    await this.db.close()
   }
 }

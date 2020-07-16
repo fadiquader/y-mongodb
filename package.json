@@ -1,6 +1,6 @@
 {
   "name": "y-mongodb",
-  "version": "0.1.0",
+  "version": "0.1.11",
   "description": "Mongodb adapter for Yjs",
   "main": "./dist/y-mongodb.cjs",
   "module": "./src/y-mongodb.js",

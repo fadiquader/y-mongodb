@@ -3,9 +3,8 @@
 Persistent Mongodb storage for [y-websocket](https://github.com/yjs/y-websocket) server
 
 ### Notes:
-* It is a fork of  [Y-leveldb](https://github.com/yjs/y-leveldb)
-* is not official.
-* Still under progress.
+* This is a fork of  [Y-leveldb](https://github.com/yjs/y-leveldb)
+* This is not officially supported by the Yjs team.
 
 ## Use it
 ```sh
