@@ -2,7 +2,7 @@
 # Mongodb database adapter for [Yjs](https://github.com/yjs/yjs)
 Persistent Mongodb storage for the server
 
-###Notes:
+### Notes:
 * It is a fork of  [Y-leveldb](https://github.com/yjs/y-leveldb)
 * is not official.
 * Still under progress.

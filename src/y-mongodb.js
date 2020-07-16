@@ -79,6 +79,7 @@ export class MongodbPersistence {
 
   /**
    * @param {string} docName
+   * @return {Promise<void>}
    */
   flushDocument (docName) {
     return this._transact(async db => {

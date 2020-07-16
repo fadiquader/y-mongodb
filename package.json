@@ -15,6 +15,9 @@
   },
   "author": "Fadi Quader <fadi.quader@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fadiquader/y-mongodb/issues"
+  },
   "dependencies": {
     "lib0": "^0.2.32",
     "mongoist": "^2.5.2",
@@ -41,8 +44,12 @@
     "ignore": [
       "/dist",
       "/node_modules",
-      "/docs"
+      "/tests"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadiquader/y-mongodb.git"
   },
   "keywords": [
     "Yjs",
